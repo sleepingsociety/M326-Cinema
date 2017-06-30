@@ -1,9 +1,11 @@
 package Model;
 
+import java.io.Serializable;
+
 /**
  * Created by oriol.gut on 16.06.2017.
  */
-public class Seat {
+public class Seat implements Serializable {
     private String name;
     private SeatStatus isReserved;
 
