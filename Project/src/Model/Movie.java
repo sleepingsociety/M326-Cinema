@@ -1,5 +1,7 @@
 package Model;
 
+import java.util.ArrayList;
+
 /**
  * Created by oriol.gut on 16.06.2017.
  */
@@ -9,6 +11,15 @@ public class Movie {
     private String movieDescription;
     private String rating;
     private int minAge;
+    private ArrayList<Presentation> presentations;
+
+    public ArrayList<Presentation> getPresentations() {
+        return presentations;
+    }
+
+    public void setPresentations(ArrayList<Presentation> presentations) {
+        this.presentations = presentations;
+    }
 
     public int getMovieLength() {
         return movieLength;

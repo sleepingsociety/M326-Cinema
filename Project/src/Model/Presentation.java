@@ -1,16 +1,27 @@
 package Model;
 
+import java.util.ArrayList;
+
 /**
  * Created by oriol.gut on 16.06.2017.
  */
 public class Presentation {
-    private String presentationName;
+    private String presentationTime;
+    private Auditorium auditorium;
 
-    public String getPresentationName() {
-        return presentationName;
+    public Auditorium getAuditorium() {
+        return auditorium;
     }
 
-    public void setPresentationName(String presentationName) {
-        this.presentationName = presentationName;
+    public void setAuditorium(Auditorium auditorium) {
+        this.auditorium = auditorium;
+    }
+
+    public String getPresentationTime() {
+        return presentationTime;
+    }
+
+    public void setPresentationTime(String presentationTime) {
+        this.presentationTime = presentationTime;
     }
 }
