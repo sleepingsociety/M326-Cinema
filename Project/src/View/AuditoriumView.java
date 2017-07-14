@@ -16,7 +16,10 @@ import javafx.stage.Stage;
 import java.util.ArrayList;
 
 /**
- * Created by david on 16.06.17.
+ * Created by David Kalchofner on 16.06.17.
+ *
+ * This class is the view class for the auditorium
+ * It will display all the seats in the auditorium which are reserved and are free
  */
 public class AuditoriumView {
     private Scene scene;

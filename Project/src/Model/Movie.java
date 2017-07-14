@@ -6,7 +6,9 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
- * Created by oriol.gut on 16.06.2017.
+ * Created by Oriol Gut on 16.06.2017.
+ *
+ * This class is a model and is used to save all the movies with there information.
  */
 public class Movie implements Serializable{
     private Stage primaryStage = null;

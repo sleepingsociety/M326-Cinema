@@ -3,7 +3,9 @@ package Model;
 import java.io.Serializable;
 
 /**
- * Created by oriol.gut on 16.06.2017.
+ * Created by Oriol Gut on 16.06.2017.
+ *
+ * This class is used to save the Customers with telephone number and name. This is a model class
  */
 public class Customer implements Serializable {
     private String customerName;

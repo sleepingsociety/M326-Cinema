@@ -17,7 +17,10 @@ import javafx.event.ActionEvent;
 
 
 /**
- * Created by David on 16.06.2017.
+ * Created by David Kalchofner on 16.06.2017.
+ *
+ * This class is a view class, which has the movies and there presentation time
+ * There you can press one of them and you will get transported to the AuditoriumView
  */
 public class MainView {
     private Scene scene;

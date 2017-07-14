@@ -3,7 +3,9 @@ package Model;
 import java.io.Serializable;
 
 /**
- * Created by oriol.gut on 16.06.2017.
+ * Created by Oriol Gut on 16.06.2017.
+ *
+ * This class is responsible for saving the different seats. It's a model class.
  */
 public class Seat implements Serializable {
     private String name;

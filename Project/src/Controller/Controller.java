@@ -14,7 +14,9 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
- * Created by Jethif on 16.06.2017.
+ * Created by Dominik O'Kerwin on 16.06.2017.
+ *
+ * This class is the controller for the MainView.
  */
 public class Controller {
     // Model
@@ -68,7 +70,6 @@ public class Controller {
                 movie.setMovieDescription(movies.get(value).getMovieDescription());
                 movie.setMinAge(movies.get(value).getMinAge());
                 movie.setMovieTitle(movies.get(value).getMovieTitle());
-                movie.setPresentations(movies.get(value).getPresentations());
                 movie.setPresentations(movies.get(value).getPresentations());
                 controllerAuditorium = new ControllerAuditorium(movie, time);
                 controllerAuditorium.show();

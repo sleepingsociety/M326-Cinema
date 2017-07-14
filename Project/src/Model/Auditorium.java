@@ -4,7 +4,9 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
- * Created by Jethif on 16.06.2017.
+ * Created by Oriol Gut on 16.06.2017.
+ *
+ * This class is the auditorium which is a model
  */
 public class Auditorium implements Serializable {
     private ArrayList<Row> rows;

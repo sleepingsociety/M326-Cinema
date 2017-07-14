@@ -4,7 +4,9 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
- * Created by oriol.gut on 16.06.2017.
+ * Created by Oriol Gut on 16.06.2017.
+ *
+ * This class is a model class and is responsible for saving the Presentations
  */
 public class Presentation implements Serializable{
     private String presentationTime;

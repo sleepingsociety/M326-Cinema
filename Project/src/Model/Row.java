@@ -4,7 +4,9 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
- * Created by oriol.gut on 16.06.2017.
+ * Created by Oriol Gut on 16.06.2017.
+ *
+ * This class is a model class for saving the rows.
  */
 public class Row implements Serializable {
     private ArrayList<Seat> seats;

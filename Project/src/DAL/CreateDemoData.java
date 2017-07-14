@@ -7,11 +7,17 @@ import java.util.ArrayList;
 import java.util.Random;
 
 /**
- * Created by Jethif on 23.06.2017.
+ * Created by Dominik O'Kerwin on 23.06.2017.
+ *
+ * This class will create demo data for the movies.
  */
 public class CreateDemoData {
 
-
+    /**
+     * This method creates the demo data
+     *
+     * @return is an arraylist which contains three movies
+     */
     public ArrayList<Movie> createDemoDate() {
         char[] letters = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'};
         ArrayList<String> times = new ArrayList<String>();
