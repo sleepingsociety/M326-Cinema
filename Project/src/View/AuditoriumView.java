@@ -31,7 +31,7 @@ public class AuditoriumView {
     }
 
     ArrayList<Button> buttons = new ArrayList<>();
-
+    Button goBackButton;
 
 
     public AuditoriumView(Movie movie, String time) {
@@ -119,7 +119,13 @@ public class AuditoriumView {
 
         bp.setCenter(rows);
 
-        bp.setBottom(saveButton);
+        goBackButton = new Button("Go Back");
+        HBox hBox = new HBox();
+        hBox.setSpacing(40);
+        hBox.getChildren().add(goBackButton);
+        hBox.getChildren().add(saveButton);
+
+        bp.setBottom(hBox);
 
 
         grid.getChildren().add(bp);
@@ -165,5 +171,13 @@ public class AuditoriumView {
 
     public void setSaveButton(Button saveButton) {
         this.saveButton = saveButton;
+    }
+
+    public Button getGoBackButton() {
+        return goBackButton;
+    }
+
+    public void setGoBackButton(Button goBackButton) {
+        this.goBackButton = goBackButton;
     }
 }

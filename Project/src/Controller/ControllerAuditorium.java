@@ -40,6 +40,7 @@ public class ControllerAuditorium {
 
         }
         view.getSaveButton().setOnAction(buttonHandler);
+        view.getGoBackButton().setOnAction(buttonHandler);
     }
 
     EventHandler<ActionEvent> buttonHandler = new EventHandler<ActionEvent>() {
@@ -57,6 +58,9 @@ public class ControllerAuditorium {
                 }
                 serializerHelper.Serialize(movies);
 
+                Controller controller = new Controller(movie);
+                controller.show();
+            } if(button.equalsIgnoreCase("Go Back")) {
                 Controller controller = new Controller(movie);
                 controller.show();
             } else {
@@ -105,7 +109,10 @@ public class ControllerAuditorium {
                                                 //System.out.println(movie.getPresentations().get(i).getAuditorium().getRows().get(j).getSeats().get(k).getName());
                                                 movie.getPresentations().get(i).getAuditorium().getRows().get(j).getSeats().get(k).setCustomer(customer);
                                                 movie.getPresentations().get(i).getAuditorium().getRows().get(j).getSeats().get(k).setIsReserved(SeatStatus.Reserved);
-                                                ((Button) event.getSource()).setDisable(true);
+                                                ((Button) event.getSource()).setStyle("-fx-base: #aaaaaa;");
+                                                ((Button) event.getSource()).setOnAction(null);
+                                                Tooltip tooltip = new Tooltip(customer.getCustomerName() + " " + customer.getCustomerPhoneNumber());
+                                                ((Button) event.getSource()).setTooltip(tooltip);
                                             }
                                         }
                                     }
