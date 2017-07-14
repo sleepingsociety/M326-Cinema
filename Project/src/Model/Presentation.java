@@ -1,11 +1,12 @@
 package Model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
  * Created by oriol.gut on 16.06.2017.
  */
-public class Presentation {
+public class Presentation implements Serializable{
     private String presentationTime;
     private Auditorium auditorium;
 

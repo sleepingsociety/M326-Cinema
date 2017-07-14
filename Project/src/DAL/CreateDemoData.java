@@ -1,3 +1,5 @@
+package DAL;
+
 import Model.*;
 
 import java.lang.reflect.Array;
@@ -8,7 +10,9 @@ import java.util.Random;
  * Created by Jethif on 23.06.2017.
  */
 public class CreateDemoData {
-    public static void main(String [] args) {
+
+
+    public ArrayList<Movie> createDemoDate() {
         char[] letters = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'};
         ArrayList<String> times = new ArrayList<String>();
         times.add("15:00");
@@ -21,13 +25,13 @@ public class CreateDemoData {
             Auditorium auditorium = new Auditorium();
             auditorium.setAuditoriumName("Auditorium" + k);
             ArrayList<Row> rows = new ArrayList<Row>();
-            for (int j = 0; j < 10; j++) {
+            for (int j = 0; j < 5; j++) {
                 Row row = new Row();
                 row.setRowName("" + letters[j]);
                 ArrayList<Seat> seats = new ArrayList<Seat>();
-                for (int i = 0; i < 10; i++) {
+                for (int i = 0; i < 8; i++) {
                     Seat seat = new Seat();
-                    seat.setName("" + i + 1);
+                    seat.setName("" + (i + 1));
                     seat.setIsReserved(SeatStatus.Free);
                     seats.add(seat);
                 }
@@ -108,6 +112,11 @@ public class CreateDemoData {
         movie3.setRating("6.4/10");
         movie3.setPresentations(presentations3);
 
+        ArrayList movies = new ArrayList();
+        movies.add(movie1);
+        movies.add(movie2);
+        movies.add(movie3);
+        return movies;
     }
 
     public static String getRandom(ArrayList<String> array) {

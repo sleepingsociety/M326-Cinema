@@ -1,11 +1,22 @@
 package Model;
 
+import java.io.Serializable;
+
 /**
  * Created by oriol.gut on 16.06.2017.
  */
-public class Seat {
+public class Seat implements Serializable {
     private String name;
     private SeatStatus isReserved;
+    private Customer customer;
+
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
+    }
 
     public SeatStatus getIsReserved() {
         return isReserved;
