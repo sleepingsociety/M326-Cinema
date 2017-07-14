@@ -34,9 +34,7 @@ public class SerializerHelper {
             i.printStackTrace();
             return null;
         }catch(ClassNotFoundException c) {
-            System.out.println("Employee class not found");
             c.printStackTrace();
             return null;
         }}
-
 }
